@@ -6,6 +6,3 @@ import type {AppDispatch, AppState} from './store';
 
 export const useAppDispatch: () => AppDispatch = useDispatch;
 export const useAppSelector: TypedUseSelectorHook<AppState> = useSelector;
-
-// export const useAppDispatch = useDispatch.withTypes<AppDispatch>();
-// export const useAppSelector = useSelector.withTypes<AppState>();

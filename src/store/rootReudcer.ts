@@ -12,9 +12,9 @@ import {CommentsAction} from './actions/comments';
 import {UserAction} from './actions/users';
 
 export interface storeState {
-  home: (x: IhomeState, y: HomeAction) => IhomeState;
-  comment: (x: IcommentState, y: CommentsAction) => IcommentState;
-  user: (x: IuserState, y: UserAction) => IuserState;
+  home: (state: IhomeState, action: HomeAction) => IhomeState;
+  comment: (state: IcommentState, action: CommentsAction) => IcommentState;
+  user: (state: IuserState, action: UserAction) => IuserState;
 }
 
 export const rootReducer = combineReducers<storeState>({
