@@ -22,5 +22,7 @@ to run project
 
 #Screen_Shots
 
-<img width="1512" alt="Screenshot 2024-04-04 at 3 06 52 AM" src="https://github.com/shalaby2022/InstaBug/assets/97378406/44858e26-1625-40af-80eb-2991064dafb6">
-![Uploading Screenshot 2024-04-04 at 3.06.25 AM.png…]()
+<img width="1512" alt="Screenshot 2024-04-04 at 3 06 52 AM" src="https://github.com/shalaby2022/BreadFast/assets/97378406/4d28d789-521f-4566-815c-57c92515fb2e">
+<img width="1512" alt="Screenshot 2024-04-04 at 3 06 39 AM" src="https://github.com/shalaby2022/BreadFast/assets/97378406/905e0ff4-4b40-4b73-b382-1538a3f26405">
+<img width="1512" alt="Screenshot 2024-04-04 at 3 06 25 AM" src="https://github.com/shalaby2022/BreadFast/assets/97378406/10322957-1193-4570-8e88-33f35a1bf90b">
+
