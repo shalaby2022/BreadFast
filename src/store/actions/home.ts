@@ -33,14 +33,10 @@ export const getHomeList = () => {
       const postsResponse = await fetchPost();
       const usersResponse = await fetchUsers();
 
-      console.log({res: postsResponse?.data});
-      console.log({res_2: usersResponse?.data});
-
       const combinedData = postsResponse?.data?.map(post => {
         const User = usersResponse?.data?.find(
           (user: IUSER) => user.id === post.user_id,
         );
-        console.log({userrrrr: User});
         return {
           ...post,
           userName: User ? User.name : 'Unknown User',

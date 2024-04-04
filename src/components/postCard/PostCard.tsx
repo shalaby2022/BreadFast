@@ -17,7 +17,6 @@ const PostCard: React.FC<PostCardProp> = ({name, title, body, postId}) => {
   const navigation = useNavigation<PostCardNavigationProp>();
 
   const onPress = (): void => {
-    console.log(`${title} Pressed`);
     navigation.navigate(ScreenNames.Post, {name, title, body, postId});
   };
 
