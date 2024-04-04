@@ -33,8 +33,9 @@ export const getUsers = () => {
       dispatch({type: ActionTypes.USERS_FETCHED, payload: res.data});
       dispatch({type: ActionTypes.USERS_LOADING_END});
     } catch (er) {
-      console.log(er);
-      dispatch({type: ActionTypes.USERS_LOADING_END, payload: er.message});
+      if (er instanceof Error) {
+        dispatch({type: ActionTypes.USERS_LOADING_END, payload: er.message});
+      }
     }
   };
 };

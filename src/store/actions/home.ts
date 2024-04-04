@@ -50,8 +50,9 @@ export const getHomeList = () => {
       dispatch({type: ActionTypes.LIST_FETCHED, payload: combinedData});
       dispatch({type: ActionTypes.LIST_LOADING_END});
     } catch (er) {
-      console.log(er);
-      dispatch({type: ActionTypes.LIST_LOADING_END, payload: er.message});
+      if (er instanceof Error) {
+        dispatch({type: ActionTypes.LIST_LOADING_END, payload: er.message});
+      }
     }
   };
 };

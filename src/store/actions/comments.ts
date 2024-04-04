@@ -36,8 +36,9 @@ export const getComments = (post_id?: number) => {
       dispatch({type: ActionTypes.COMMENTS_FETCHED, payload: res.data});
       dispatch({type: ActionTypes.COMMENTS_LOADING_END});
     } catch (er) {
-      console.log(er);
-      dispatch({type: ActionTypes.COMMENTS_LOADING_END, payload: er.message});
+      if (er instanceof Error) {
+        dispatch({type: ActionTypes.COMMENTS_LOADING_END, payload: er.message});
+      }
     }
   };
 };
