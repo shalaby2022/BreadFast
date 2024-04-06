@@ -30,14 +30,16 @@ export const styles = StyleSheet.create({
   userName: {
     fontSize: 16,
     fontWeight: 'bold',
+    color: '#222',
   },
   contentContainer: {
     marginBottom: 10,
   },
   title: {
     fontSize: 18,
-    fontWeight: '700',
-    marginBottom: 5,
+    fontWeight: '600',
+    marginBottom: 10,
+    color: '#333',
   },
   content: {
     fontSize: 16,
