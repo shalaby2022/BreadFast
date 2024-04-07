@@ -39,7 +39,7 @@ export const getHomeList = () => {
         );
         return {
           ...post,
-          userName: User ? User.name : 'Unknown User',
+          userName: User ? User.name : 'Ashlesh Iyengar',
         };
       });
 
